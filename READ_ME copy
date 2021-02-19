@@ -1,0 +1,29 @@
+READ ME FT_PRINTF_TEST
+
+Who to use ?
+
+	Files tests are only simple main you can use like main test.
+
+
+Tests explanations :
+
+	Each files test one type of converter.
+	I have try to list each possible flag combination include warning/error possibilities,
+	!!! but Bonus are no supported. !!!
+
+	Each posibility have two lines. Look the line header.
+
+	The first part say what is the output
+		first  line on two 'my42 : ' is your ft_printf output.
+		second line on two 'nati : ' is the native printf output.
+
+	The second part start with '%' and finish zith '|' is what you tried to put. exemple :
+		'%0-10.7i  : |'
+
+	Last part after '|' is the output.
+
+	At the end of each files you have a get crazy test
+		Each two first lines on four haven't header and there are the same things like others test parts
+		Here we test if your ft_printf can use two converters and the ft_printf return.
+
+you can comment in the files the line you don t want test. i hope that will help you.
