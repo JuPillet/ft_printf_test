@@ -53,7 +53,7 @@ int		main(void)
 	printf("nati : %%0.5i\t : |%*.*i$\n", 0, 5, 12345);
 	usleep(500);
 	ft_printf("my42 : %%0.7i\t : |%*.*i$\n", 0, 7, 12345);
-	printf("nati : %%0.7i\t : |%*.*$\n", 0, 7, 12345);
+	printf("nati : %%0.7i\t : |%*.*i$\n", 0, 7, 12345);
 	usleep(500);
 	ft_printf("my42 : %%0.-7i\t : |%*.*i$\n", 0, -7, 12345);
 	printf("nati : %%0.-7i\t : |%*.*i$\n", 0, -7, 12345);
