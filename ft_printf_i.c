@@ -53,7 +53,7 @@ int		main(void)
 	printf("nati : %%0.5i\t : |%*.*i$\n", 0, 5, 12345);
 	usleep(500);
 	ft_printf("my42 : %%0.7i\t : |%*.*i$\n", 0, 7, 12345);
-	printf("nati : %%0.7i\t : |%*.*i$\n", 0, 7, 12345);
+	printf("nati : %%0.7i\t : |%*.*$\n", 0, 7, 12345);
 	usleep(500);
 	ft_printf("my42 : %%0.-7i\t : |%*.*i$\n", 0, -7, 12345);
 	printf("nati : %%0.-7i\t : |%*.*i$\n", 0, -7, 12345);
@@ -84,6 +84,9 @@ int		main(void)
 	usleep(500);
 	ft_printf("my42 : %%10.7i\t : |%*.*i$\n", 10, 7, 12345);
 	printf("nati : %%10.7i\t : |%*.*i$\n", 10, 7, 12345);
+	usleep(500);
+	ft_printf("my42 : %%10.-7i\t : |%*.*i$\n", 10, -7, 12345);
+	printf("nati : %%10.-7i\t : |%*.*i$\n", 10, -7, 12345);
 	usleep(500);
 	ft_printf("my42 : %%-5.0i\t : |%*.*i$\n", -5, 0, 12345);
 	printf("nati : %%-5.0i\t : |%*.*i$\n", -5, 0, 12345);
@@ -191,6 +194,9 @@ int		main(void)
 	ft_printf("my42 : %%10.7i\t : |%*.*i$\n", 10, 7, -12345);
 	printf("nati : %%10.7i\t : |%*.*i$\n", 10, 7, -12345);
 	usleep(500);
+	ft_printf("my42 : %%10.-7i\t : |%*.*i$\n", 10, -7, -12345);
+	printf("nati : %%10.-7i\t : |%*.*i$\n", 10, -7, -12345);
+	usleep(500);
 	ft_printf("my42 : %%-5.0i\t : |%*.*i$\n", -5, 0, -12345);
 	printf("nati : %%-5.0i\t : |%*.*i$\n", -5, 0, -12345);
 	usleep(500);
@@ -297,6 +303,9 @@ int		main(void)
 	ft_printf("my42 : %%010.7i\t : |%0*.*i$\n", 10, 7, 12345);
 	printf("nati : %%010.7i\t : |%0*.*i$\n", 10, 7, 12345);
 	usleep(500);
+	ft_printf("my42 : %%010.-7i\t : |%*.*i$\n", 10, -7, 12345);
+	printf("nati : %%010.-7i\t : |%*.*i$\n", 10, -7, 12345);
+	usleep(500);
 	ft_printf("my42 : %%0-5.0i\t : |%0*.*i$\n", -5, 0, 12345);
 	printf("nati : %%0-5.0i\t : |%0*.*i$\n", -5, 0, 12345);
 	usleep(500);
@@ -402,6 +411,9 @@ int		main(void)
 	usleep(500);
 	ft_printf("my42 : %%010.7i\t : |%0*.*i$\n", 10, 7, -12345);
 	printf("nati : %%010.7i\t : |%0*.*i$\n", 10, 7, -12345);
+	usleep(500);
+	ft_printf("my42 : %%010.-7i\t : |%0*.*i$\n", 10, -7, -12345);
+	printf("nati : %%010.-7i\t : |%0*.*i$\n", 10, -7, -12345);
 	usleep(500);
 	ft_printf("my42 : %%0-5.0i\t : |%0*.*i$\n", -5, 0, -12345);
 	printf("nati : %%0-5.0i\t : |%0*.*i$\n", -5, 0, -12345);
