@@ -101,8 +101,8 @@ int		main(void)
 	ft_printf("my42 : %%-12.15p\t  : |%*.*p$\n", -12, 15, p);
 	printf("nati : %%-12.15p\t  : |%*.*p$\n", -12, 15, p);
 	usleep(500);
-	ft_printf("my42 : %%-12.-15p : |%*.*p$\n", -12, -15, p);
-	printf("nati : %%-12.-15p : |%*.*p$\n", -12, -15, p);
+	ft_printf("my42 : %%-12.-15p  : |%*.*p$\n", -12, -15, p);
+	printf("nati : %%-12.-15p  : |%*.*p$\n", -12, -15, p);
 	usleep(500);
 	ft_printf("my42 : %%-20.0p\t  : |%*.*p$\n", -20, 0, p);
 	printf("nati : %%-20.0p\t  : |%*.*p$\n", -20, 0, p);
