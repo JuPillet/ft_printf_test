@@ -1,14 +1,7 @@
-#include "../ft_printf.h"
+#include "../includes/ft_printf.h"
 
 int		main(void)
 {
-	int a;
-	int *b;
-	int	nbcmy42;
-	int nbcnati;
-
-	a = 1;
-	b = &a;
 	printf("-----------i--positive---------\n");
 	ft_printf("my42 : %%i\t : |%i$\n", 12345);
 	printf("nati : %%i\t : |%i$\n", 12345);
@@ -444,42 +437,6 @@ int		main(void)
 	usleep(500);
 	ft_printf("my42 : %%0-10.-7i : |%0*.*i$\n", -10, -7, -12345);
 	printf("nati : %%0-10.-7i : |%0*.*i$\n", -10, -7, -12345);
-	printf("**** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** \n");
-	printf("**** **** **** **** **** **** **** **** **** get-crazy **** **** **** **** **** **** **** **** **** \n");
-	printf("**** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** \n");
-	usleep(500);
-	a = ft_printf("abc %**.*-i abc %**.*-i$", 1, 10, 0, 12345, 14, 8, 0, 12345);
-	printf("\n");
-	printf("my42 return : %i\n", a);
-	usleep(500);
-	a = printf("abc %**.*-i abc %**.*-i$", 1, 10, 0, 12345, 14, 8, 0, 12345);
-	printf("\n");
-	printf("nati return : %i\n", a);
-	usleep(500);
-	a = ft_printf("abc %**.*-i abc %**.*-i$", 1, 10, 0, -12345, 14, 8, 0, -12345);
-	printf("\n");
-	printf("my42 return : %i\n", a);
-	usleep(500);
-	a = printf("abc %**.*-i abc %**.*-i$", 1, 10, 0, -12345, 14, 8, 0, -12345);
-	printf("\n");
-	printf("nati return : %i\n", a);
-	usleep(500);
-	a = ft_printf("abc %0**.*-i abc %0**.*-i$", 1, 10, 0, 12345, 14, 8, 0, 12345);
-	printf("\n");
-	printf("my42 return : %i\n", a);
-	usleep(500);
-	a = printf("abc %0**.*-i abc %0**.*-i$", 1, 10, 0, 12345, 14, 8, 0, 12345);
-	printf("\n");
-	printf("nati return : %i\n", a);
-	usleep(500);
-	a = ft_printf("abc %0**.*-i abc %0**.*-i$", 1, 10, 0, -12345, 14, 8, 0, -12345);
-	printf("\n");
-	usleep(500);
-	printf("my42 return : %i\n", a);
-	a = printf("abc %0**.*-i abc %0**.*-i$", 1, 10, 0, -12345, 14, 8, 0, -12345);
-	printf("\n");
-	printf("nati return : %i\n", a);
-	usleep(500);
 
 	return 0;
 }
